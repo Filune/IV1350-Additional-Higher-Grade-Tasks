@@ -9,7 +9,7 @@ public class RandomAdapterComposition {
     }
 
     /**
-     * Generates a random integer within the specified range and rounds it to the nearest multiple of 10.
+     * Generates a random integer within the specified range and rounds it down to the nearest multiple of 10.
      *
      * @param min the minimum value (inclusive)
      * @param max the maximum value (inclusive)
