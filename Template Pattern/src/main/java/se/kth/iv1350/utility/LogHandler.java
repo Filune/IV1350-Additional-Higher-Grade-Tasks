@@ -13,7 +13,7 @@ import java.util.logging.SimpleFormatter;
  */
 public class LogHandler {
     private static final LogHandler INSTANCE = new LogHandler();
-    private static final String LOG_FILE = "Testing output/Process-Sale-exceptions.log";
+    private static final String LOG_FILE = "Process-Sale-exceptions.log";
     private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     private Logger logger;
