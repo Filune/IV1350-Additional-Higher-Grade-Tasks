@@ -12,7 +12,7 @@ import se.kth.iv1350.utility.Total;
 public class Payment {
     private Amount paidAmount;
     private Total total;
-    private List<PaymentObserver> observers;
+    private List<ObserverTemplate> observers;
 
     /**
      * Creates an instance of Payment with the specified paid amount and total.
@@ -59,7 +59,7 @@ public class Payment {
      *
      * @param observers The observers to be added.
      */
-    public void addObserver(List<PaymentObserver> observers) {
+    public void addObserver(List<ObserverTemplate> observers) {
         this.observers.addAll(observers);
     }
 
@@ -68,12 +68,12 @@ public class Payment {
      *
      * @param observers The observers to be added.
      */
-    public void removeObserver(List<PaymentObserver> observers) {
+    public void removeObserver(List<ObserverTemplate> observers) {
         this.observers.removeAll(observers);
     }
 
     private void notifyObservers() {
-        for (PaymentObserver obs : observers) {
+        for (ObserverTemplate obs : observers) {
             obs.updateTotalIncome(total);
         }
     }

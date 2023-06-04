@@ -22,7 +22,7 @@ public class Controller {
     private Printer printer;
     private LogHandler logger = LogHandler.getInstance();
     private DiscountCatalogue discountdb;
-    private List<PaymentObserver> paymentObservers;
+    private List<ObserverTemplate> paymentObservers;
 
     /**
      * Creates an instance of the Controller class, initializing its dependencies.
@@ -176,7 +176,7 @@ public class Controller {
      *
      * @param paymentObserver The PaymentObserver to be added.
      */
-    public void addObserver(PaymentObserver paymentObserver){
+    public void addObserver(ObserverTemplate paymentObserver){
         paymentObservers.add(paymentObserver);
     }
 

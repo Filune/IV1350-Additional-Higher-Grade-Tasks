@@ -834,3 +834,78 @@ java.lang.Exception: Sale not made in correct order.
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
 
+Jun 04, 2023 3:35:05 PM se.kth.iv1350.utility.LogHandler logException
+SEVERE: [2023-06-04 15:35:05] OperationFailedException: Database is offline.
+
+se.kth.iv1350.controller.OperationFailedException: Database is offline.
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:80)
+	at se.kth.iv1350.controller.Controller.searchForGood(Controller.java:59)
+	at se.kth.iv1350.view.View.scanGoods(View.java:80)
+	at se.kth.iv1350.view.View.sample(View.java:53)
+	at se.kth.iv1350.startup.Main.main(Main.java:21)
+Caused by: java.sql.SQLException: Database is offline.
+	at se.kth.iv1350.integration.GoodCatalogue.getGood(GoodCatalogue.java:67)
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:76)
+	... 4 more
+
+Jun 04, 2023 3:35:05 PM se.kth.iv1350.utility.LogHandler logException
+SEVERE: [2023-06-04 15:35:05] FileNotFoundException: Template Pattern/Process-Sale-TotalRevenue.log (No such file or directory)
+
+java.io.FileNotFoundException: Template Pattern/Process-Sale-TotalRevenue.log (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:156)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:84)
+	at se.kth.iv1350.integration.TotalRevenueFileOutput.doShowTotalIncome(TotalRevenueFileOutput.java:31)
+	at se.kth.iv1350.model.ObserverTemplate.showTotalIncome(ObserverTemplate.java:22)
+	at se.kth.iv1350.model.ObserverTemplate.updateTotalIncome(ObserverTemplate.java:17)
+	at se.kth.iv1350.model.Payment.notifyObservers(Payment.java:77)
+	at se.kth.iv1350.model.Payment.getChange(Payment.java:53)
+	at se.kth.iv1350.controller.Controller.processPaymentResult(Controller.java:166)
+	at se.kth.iv1350.controller.Controller.enterPaidAmount(Controller.java:132)
+	at se.kth.iv1350.view.View.sample(View.java:61)
+	at se.kth.iv1350.startup.Main.main(Main.java:21)
+
+Jun 04, 2023 3:35:33 PM se.kth.iv1350.utility.LogHandler logException
+SEVERE: [2023-06-04 15:35:33] OperationFailedException: Database is offline.
+
+se.kth.iv1350.controller.OperationFailedException: Database is offline.
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:80)
+	at se.kth.iv1350.controller.Controller.searchForGood(Controller.java:59)
+	at se.kth.iv1350.view.View.scanGoods(View.java:80)
+	at se.kth.iv1350.view.View.sample(View.java:53)
+	at se.kth.iv1350.startup.Main.main(Main.java:21)
+Caused by: java.sql.SQLException: Database is offline.
+	at se.kth.iv1350.integration.GoodCatalogue.getGood(GoodCatalogue.java:67)
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:76)
+	... 4 more
+
+Jun 04, 2023 3:38:09 PM se.kth.iv1350.utility.LogHandler logException
+SEVERE: [2023-06-04 15:38:09] OperationFailedException: Database is offline.
+
+se.kth.iv1350.controller.OperationFailedException: Database is offline.
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:80)
+	at se.kth.iv1350.controller.Controller.searchForGood(Controller.java:59)
+	at se.kth.iv1350.view.View.scanGoods(View.java:80)
+	at se.kth.iv1350.view.View.sample(View.java:53)
+	at se.kth.iv1350.startup.Main.main(Main.java:21)
+Caused by: java.sql.SQLException: Database is offline.
+	at se.kth.iv1350.integration.GoodCatalogue.getGood(GoodCatalogue.java:67)
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:76)
+	... 4 more
+
+Jun 04, 2023 3:38:19 PM se.kth.iv1350.utility.LogHandler logException
+SEVERE: [2023-06-04 15:38:19] OperationFailedException: Database is offline.
+
+se.kth.iv1350.controller.OperationFailedException: Database is offline.
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:80)
+	at se.kth.iv1350.controller.Controller.searchForGood(Controller.java:59)
+	at se.kth.iv1350.view.View.scanGoods(View.java:80)
+	at se.kth.iv1350.view.View.sample(View.java:53)
+	at se.kth.iv1350.startup.Main.main(Main.java:21)
+Caused by: java.sql.SQLException: Database is offline.
+	at se.kth.iv1350.integration.GoodCatalogue.getGood(GoodCatalogue.java:67)
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:76)
+	... 4 more
+

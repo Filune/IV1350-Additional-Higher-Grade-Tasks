@@ -14,7 +14,7 @@ import se.kth.iv1350.utility.Total;
  * A class that implements the PaymentObserver interface and writes the total income to a file.
  */
 public class TotalRevenueFileOutput implements PaymentObserver {
-    private static final String FILE_NAME = "Testing output/Process-Sale-TotalRevenue.log";
+    private static final String FILE_NAME = "Process-Sale-TotalRevenue.log";
     private LogHandler logger = LogHandler.getInstance();
 
     /**
