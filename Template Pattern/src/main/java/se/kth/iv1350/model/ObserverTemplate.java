@@ -1,5 +1,6 @@
 package se.kth.iv1350.model;
 
+
 import se.kth.iv1350.utility.Total;
 
 /**
@@ -20,8 +21,8 @@ public abstract class ObserverTemplate implements PaymentObserver {
     private void showTotalIncome(Total totalPriceOfSale) {
         try {
             doShowTotalIncome(totalPriceOfSale);
-        } catch (Exception e) {
-            handleErrors(e);
+        } catch (Exception exc) {
+            handleErrors(exc);
         }
     }
 
@@ -29,14 +30,14 @@ public abstract class ObserverTemplate implements PaymentObserver {
      * Performs the actual operation of showing the total income.
      *
      * @param totalPriceOfSale The total price of the sale.
-     * @throws Exception If an error occurs while showing the total income.
+     * @throws Exception thrown if showing total income fails.
      */
     protected abstract void doShowTotalIncome(Total totalPriceOfSale) throws Exception;
 
     /**
-     * Handles errors that occur while showing the total income.
+     * Handles errors that occur while showing or writing the total income.
      *
-     * @param e The exception that occurred.
+     * @param exc The exception that occurred.
      */
-    protected abstract void handleErrors(Exception e);
+    protected abstract void handleErrors(Exception exc);
 }

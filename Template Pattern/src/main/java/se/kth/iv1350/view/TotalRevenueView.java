@@ -28,7 +28,8 @@ public class TotalRevenueView extends ObserverTemplate {
      * @param e The exception that occurred.
      */
     @Override
-    protected void handleErrors(Exception e) {
-        logger.logException(e);
+    protected void handleErrors(Exception exc) {
+        logger.logException(exc);
     }
 }
+
