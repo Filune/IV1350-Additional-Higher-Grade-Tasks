@@ -1,5 +1,8 @@
 import java.util.Random;
 
+/**
+ * An adaptation of the Random class using inheritance.
+ */
 public class RandomAdapterInheritance extends Random {
 
     /**

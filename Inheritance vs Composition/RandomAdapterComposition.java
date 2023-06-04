@@ -1,9 +1,15 @@
 import java.util.Random;
 
+/**
+ * An adaptation of the Random class using composition.
+ */
 public class RandomAdapterComposition {
 
     private Random random;
 
+    /**
+     * Constructor creates an instance of the random object.
+     */
     public RandomAdapterComposition() {
         random = new Random();
     }
