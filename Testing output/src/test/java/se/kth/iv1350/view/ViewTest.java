@@ -81,7 +81,7 @@ public class ViewTest {
         String actualOutput = outputStream.toString();
 
         // Assert
-        assertTrue(actualOutput.contains(databaseOffline), "Assertion failed for databaseOffline.");
+        assertTrue(actualOutput.contains(databaseOffline), "Assertion failed for databaseOfflineMessage.");
     }
 
     @Test
@@ -97,7 +97,7 @@ public class ViewTest {
         String actualOutput = outputStream.toString();
 
         // Assert
-        assertTrue(actualOutput.contains(invalidGoodScanned), "Assertion failed for invalidGoodScanned.");
+        assertTrue(actualOutput.contains(invalidGoodScanned), "Assertion failed for invalidGoodScannedMessage.");
     }
 
     @Test
@@ -142,7 +142,7 @@ public class ViewTest {
         String actualOutput = outputStream.toString();
 
         // Assert
-        assertTrue(actualOutput.contains(totalWithVAT), "Assertion failed for totalWithVAT.");
+        assertTrue(actualOutput.contains(totalWithVAT), "Assertion failed for totalWithVATMessage.");
     }
 
     @Test
@@ -171,7 +171,7 @@ public class ViewTest {
         String actualOutput = outputStream.toString();
 
         // Assert
-        assertTrue(actualOutput.contains(saleTimeInReceipt), "Assertion failed for saleTimeInReceipt.");
+        assertTrue(actualOutput.contains(saleTimeInReceipt), "Assertion failed for saleTimeInReceiptMessage.");
     }
 
     @Test
@@ -203,7 +203,7 @@ public class ViewTest {
         String actualOutput = outputStream.toString();
 
         // Assert
-        assertTrue(actualOutput.contains(TotalRevenueViewDisplay), "Assertion failed for TotalRevenueViewDisplay.");
+        assertTrue(actualOutput.contains(TotalRevenueViewDisplay), "Assertion failed for TotalRevenueViewDisplayMessage.");
     }
 
     @Test
@@ -216,7 +216,7 @@ public class ViewTest {
         String actualOutput = outputStream.toString();
 
         // Assert
-        assertTrue(actualOutput.contains(enteredAmount), "Assertion failed for enteredAmount.");
+        assertTrue(actualOutput.contains(enteredAmount), "Assertion failed for enteredAmountMessage.");
     }
 
     @Test
@@ -229,7 +229,7 @@ public class ViewTest {
         String actualOutput = outputStream.toString();
 
         // Assert
-        assertTrue(actualOutput.contains(change), "Assertion failed for change.");
+        assertTrue(actualOutput.contains(change), "Assertion failed for changeMessage.");
     }
 
 }
