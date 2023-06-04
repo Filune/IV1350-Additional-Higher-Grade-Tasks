@@ -27,7 +27,7 @@ public abstract class ObserverTemplate implements PaymentObserver {
     }
 
     /**
-     * Performs the actual operation of showing the total income.
+     * Outputs total income to output field such as terminal or file.
      *
      * @param totalPriceOfSale The total price of the sale.
      * @throws Exception thrown if showing total income fails.

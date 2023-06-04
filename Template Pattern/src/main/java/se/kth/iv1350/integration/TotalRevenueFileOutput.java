@@ -20,7 +20,7 @@ public class TotalRevenueFileOutput extends ObserverTemplate {
      * Writes the total income to a file along with a timestamp.
      *
      * @param totalPriceOfSale The total price of the sale.
-     * @throws Exception If an error occurs while writing the total income to the file.
+     * @throws Exception thrown if an error occurs while writing the total income to the file.
      */
     @Override
     protected void doShowTotalIncome(Total totalPriceOfSale) throws Exception {
@@ -37,7 +37,7 @@ public class TotalRevenueFileOutput extends ObserverTemplate {
     /**
      * Handles errors that occur while writing the total income to the file by logging the exception.
      *
-     * @param e The exception that occurred.
+     * @param exc The exception that occurred.
      */
     @Override
     protected void handleErrors(Exception exc) {

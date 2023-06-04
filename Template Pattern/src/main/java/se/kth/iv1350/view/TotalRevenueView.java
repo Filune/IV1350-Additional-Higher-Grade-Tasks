@@ -15,7 +15,7 @@ public class TotalRevenueView extends ObserverTemplate {
      * Displays the total income based on the specified total price of the sale.
      *
      * @param totalPriceOfSale The total price of the sale.
-     * @throws Exception If an error occurs while displaying the total income.
+     * @throws Exception thrown if an error occurs while displaying the total income.
      */
     @Override
     protected void doShowTotalIncome(Total totalPriceOfSale) throws Exception {
@@ -25,11 +25,10 @@ public class TotalRevenueView extends ObserverTemplate {
     /**
      * Handles errors that occur while displaying the total income by logging the exception.
      *
-     * @param e The exception that occurred.
+     * @param exc The exception that occurred.
      */
     @Override
     protected void handleErrors(Exception exc) {
         logger.logException(exc);
     }
 }
-

@@ -923,3 +923,17 @@ Caused by: java.sql.SQLException: Database is offline.
 	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:76)
 	... 4 more
 
+Jun 04, 2023 7:58:12 PM se.kth.iv1350.utility.LogHandler logException
+SEVERE: [2023-06-04 19:58:12] OperationFailedException: Database is offline.
+
+se.kth.iv1350.controller.OperationFailedException: Database is offline.
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:80)
+	at se.kth.iv1350.controller.Controller.searchForGood(Controller.java:59)
+	at se.kth.iv1350.view.View.scanGoods(View.java:80)
+	at se.kth.iv1350.view.View.sample(View.java:53)
+	at se.kth.iv1350.startup.Main.main(Main.java:21)
+Caused by: java.sql.SQLException: Database is offline.
+	at se.kth.iv1350.integration.GoodCatalogue.getGood(GoodCatalogue.java:67)
+	at se.kth.iv1350.controller.Controller.registerGood(Controller.java:76)
+	... 4 more
+
