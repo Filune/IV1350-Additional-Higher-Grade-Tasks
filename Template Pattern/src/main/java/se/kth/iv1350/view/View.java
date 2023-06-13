@@ -52,14 +52,12 @@ public class View {
 
         scanGoods();
 
-        String output = contr.displayTotalWithVAT();
-        print("---Cashier displays total with VAT---\n" + output);  
+        print("---Cashier displays total with VAT---\n" + contr.displayTotalWithVAT());  
     
         Amount paidAmount = new Amount(PAID_AMOUNT);
         print("---Cashier enters the paid amount---\n");
         try {
-            output = contr.enterPaidAmount(paidAmount);
-            print("Entered amount is: " + paidAmount + "\n" + output);
+            print("Entered amount is: " + paidAmount + "\n" + contr.enterPaidAmount(paidAmount));
         } catch (InvalidPaymentException exc) {
             errorMsgHandler.showErrorMsg(
                 "The amount entered is less than the cost of the goods. Payment cancelled."+
@@ -77,9 +75,8 @@ public class View {
     private void scanGoods() {
         for (int i = 0; i < AMOUNT_OF_GOODS; i++) {
             try {
-            String output = contr.searchForGood(LIST_OF_GOODS.get(i), 
-                new Amount(randomQuantityInRange(MIN_QUANTITY_OF_EACH_GOOD, MAX_QUANTITY_OF_EACH_GOOD)));
-            print(output);
+            print(contr.searchForGood(LIST_OF_GOODS.get(i), 
+                new Amount(randomQuantityInRange(MIN_QUANTITY_OF_EACH_GOOD, MAX_QUANTITY_OF_EACH_GOOD))));
             } catch (InvalidGoodException exception) {
                 errorMsgHandler.showErrorMsg("Invalid good has been scanned: " + exception.getInvalidGood().getName() + "\n");
             } catch (OperationFailedException exception) {
