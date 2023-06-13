@@ -7,9 +7,7 @@ import java.util.Random;
 import se.kth.iv1350.controller.Controller;
 import se.kth.iv1350.controller.OperationFailedException;
 import se.kth.iv1350.integration.InvalidGoodException;
-import se.kth.iv1350.integration.TotalRevenueFileOutput;
 import se.kth.iv1350.model.InvalidPaymentException;
-import se.kth.iv1350.model.ObserverTemplate;
 import se.kth.iv1350.utility.Amount;
 import se.kth.iv1350.utility.LogHandler;
 
@@ -20,8 +18,6 @@ public class View {
     private Controller contr;
     private ErrorMessageHandler errorMsgHandler = new ErrorMessageHandler();
     private LogHandler logger = LogHandler.getInstance();
-    private ObserverTemplate totalRevenueView = new TotalRevenueView();
-    private ObserverTemplate totalRevenueFileOutput = new TotalRevenueFileOutput();
     
     private static final List<String> LIST_OF_GOODS = Arrays.asList("dbOffline", "Applef", "Apple", "Hamburger", "Cucumber");
     private static final int AMOUNT_OF_GOODS = LIST_OF_GOODS.size();
@@ -37,8 +33,6 @@ public class View {
      */
     public View(Controller contr) {
         this.contr = contr;
-        contr.addObserver(totalRevenueView);
-        contr.addObserver(totalRevenueFileOutput);
     }
 
     /**
