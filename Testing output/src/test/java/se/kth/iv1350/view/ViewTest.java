@@ -3,9 +3,11 @@ package se.kth.iv1350.view;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import se.kth.iv1350.controller.Controller;
 import se.kth.iv1350.integration.LedgerSystem;
 import se.kth.iv1350.integration.Printer;
+import se.kth.iv1350.startup.Main;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -197,6 +199,7 @@ public class ViewTest {
     public void testTotalRevenueViewDisplayMessage() {
         // Arrange
         String TotalRevenueViewDisplay = "DISPLAY FOR TotalRevenueView: 119.0";
+        Main.main(null);
 
         // Act
         view.sample();
